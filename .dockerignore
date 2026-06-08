@@ -1,0 +1,10 @@
+# Ignore AI agent folders
+.claude
+.cursor
+
+# Ignore heavy node_modules (Docker installs its own)
+node_modules
+
+# Ignore git and env files
+.git
+.env
