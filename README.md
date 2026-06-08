@@ -1,17 +1,31 @@
-# React + TypeScript + Vite
+# ProjexFi Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository contains the client-side web application for **ProjexFi**, allowing users to interact with smart contracts, fund projects, and view their transaction history.
 
-Currently, two official plugins are available:
+> **⚠️ IMPORTANT: Deployment & Setup**
+> This repository is a microservice part of the larger ProjexFi ecosystem. 
+> To run this project, boot the local blockchain, and deploy the containers, please refer to the master initialization guide in the **[ProjexFi Root Repository](https://github.com/anupasiriwardana/ProjexFi)**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🛠 Tech Stack
+* **React 18:** UI Library.
+* **Vite:** Next-generation frontend tooling and bundler.
+* **TypeScript:** Static typing for safer code.
+* **Ethers.js (v6):** Connecting the UI to MetaMask and the blockchain.
 
-## React Compiler
+## 💻 Local Development
+If you are modifying the UI locally without Docker, ensure your local Hardhat node is running first.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```bash
+# Install dependencies
+npm install
 
-## Expanding the ESLint configuration
+# Start the Vite development server
+npm run dev
+```
+
+*(Note: Ensure your MetaMask wallet is connected to `http://127.0.0.1:8545` and you have imported a test account to execute transactions locally).*
+
+## Expanding the ESLint configuration (Additional)
 
 If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
